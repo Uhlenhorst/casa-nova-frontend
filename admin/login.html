@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backoffice Login – Casa Nova</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img class="logo" src="../assets/images/logo-schriftzug.png" alt="Casa Nova">
+</header>
+
+<main>
+  <section class="hero container">
+    <span class="eyebrow">Backoffice</span>
+    <h1>Login</h1>
+  </section>
+
+  <section class="container" style="max-width: 420px;">
+    <div class="frame">
+      <div id="login-message"></div>
+      <form id="login-form">
+        <label for="username">Benutzername</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+
+        <label for="password">Passwort</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+
+        <div class="btn-row">
+          <button type="submit" class="btn">Einloggen</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/admin.js"></script>
+</body>
+</html>

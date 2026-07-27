@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backoffice – Casa Nova</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  .day-edit, .spezial-edit {
+    border: 1px solid rgba(201,164,90,0.3);
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.4rem;
+  }
+  .item-row { display: grid; grid-template-columns: 2fr 1fr; gap: 0.8rem; margin-bottom: 0.6rem; }
+  .spezial-row { display: grid; grid-template-columns: 70px 2fr 3fr 1fr; gap: 0.8rem; align-items: end; }
+  .top-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img class="logo" src="../assets/images/logo-schriftzug.png" alt="Casa Nova">
+</header>
+
+<main>
+  <section class="container" style="padding-top: 2rem;">
+    <div class="top-bar">
+      <h1 class="mt-0">Backoffice</h1>
+      <button id="logout-btn" class="btn btn-outline">Abmelden</button>
+    </div>
+    <div id="dashboard-message"></div>
+  </section>
+
+  <section class="container">
+    <div class="frame">
+      <h2 class="mt-0">Mittagstisch</h2>
+      <p class="small">Pro Tag: Salat, Pasta, Hauptgericht, Pizza – Name und Preis anpassen.</p>
+      <div id="mittagstisch-editor"></div>
+      <div class="btn-row">
+        <button id="save-mittagstisch" class="btn">Mittagstisch speichern</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="frame">
+      <h2 class="mt-0">Spezialkarte S1–S10</h2>
+      <p class="small">Leere Felder werden auf der Website automatisch ausgeblendet.</p>
+      <div id="spezialkarte-editor"></div>
+      <div class="btn-row">
+        <button id="save-spezialkarte" class="btn">Spezialkarte speichern</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/admin.js"></script>
+</body>
+</html>
