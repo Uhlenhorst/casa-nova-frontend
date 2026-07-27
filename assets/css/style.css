@@ -60,20 +60,30 @@ p { margin: 0 0 1em; }
 /* --- Kopfzeile / Navigation --- */
 
 header.site-header {
-  padding: 1.6rem 0 1rem;
-  text-align: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 2.4rem;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(201, 164, 90, 0.35);
 }
 
 header.site-header img.logo {
-  height: 76px;
-  margin-bottom: 0.9rem;
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 nav.main-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1.4rem 2rem;
   font-family: 'Cinzel', serif;
   font-size: 0.82rem;
@@ -289,6 +299,9 @@ footer.site-footer .legal-links a { margin: 0 0.5em; }
   body { font-size: 18px; }
   .frame { padding: 1.6rem 1.1rem; }
   .form-row-group { grid-template-columns: 1fr; }
+  header.site-header { justify-content: center; text-align: center; }
+  nav.main-nav { justify-content: center; }
+  header.site-header img.logo { height: 82px; width: 82px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
